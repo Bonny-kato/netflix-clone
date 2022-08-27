@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "NetflixSans";
+        font-weight: 400;
+        src: url("../public/fonts/NetflixSansRegular.ttf");
+    }
+
+    @font-face {
+        font-family: "NetflixSans";
+        font-weight: 500;
+        src: url("../public/fonts/NetflixSansMedium.ttf");
+    }
+    @font-face {
+        font-family: "NetflixSans";
+        font-weight: 300;
+        src: url("../public/fonts/NetflixSansLight.ttf");
+    }
+    body{
+        font-family: "NetflixSans", sans-serif;
+        font-weight: 300;
+    }
+}
+
+@layer components{
+    .center{
+        @apply flex justify-center items-center
+    }
+    .items-between{
+        @apply flex items-center justify-between
+    }
+}
